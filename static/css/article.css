@@ -1,0 +1,67 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/regular.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/regular.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/svg-with-js.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/svg-with-js.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/v4-font-face.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/v4-font-face.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/v4-shims.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/v4-shims.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/v5-font-face.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/v5-font-face.min.css');
+
+:root {
+	--color-bg: rgb(11, 11, 16);
+	--color-bg-items: rgb(19, 19, 36);
+	--text-color: rgb(255, 255, 255);
+	--color-main: rgb(59, 18, 240);
+}
+
+.post-body {
+	padding: 12px;
+	width: 24%;
+}
+
+.post {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 20px;
+}
+
+.post-metadata {
+	display: flex;
+	align-items: center;
+}
+
+.post-metadata .post-author {
+	color: var(--text-color);
+	text-decoration: none;
+	margin-right: 10px;
+	background-color: var(--color-main);
+	padding: 1px 8px;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+.post-metadata .post-author:hover {
+	text-decoration: underline;
+}
+
+.post-body .post-title {
+	color: var(--text-color);
+	text-decoration: none;
+	font-size: 1.9rem;
+}
+
+.post-body .post-content {
+	margin-top: 5px;
+}

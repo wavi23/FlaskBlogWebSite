@@ -6,14 +6,14 @@ posts = [
 	{
 		'author': "Pedalinio",
 		'title': "Tytuł posta 1",
-		'content': "Opis posta 1",
-		'date_posted': "22 Luty, 2025"
+		'content': "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		'date_posted': "22/02/2025"
 	},
 	{
 		'author': "Pedalinio",
-		'title': "Tytył posta 2",
-		'content': "Opis posta 2",
-		'date_posted': "23 Luty, 2025"
+		'title': "Tytuł posta 2",
+		'content': "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		'date_posted': "23/02/2025"
 	}
 ]
 
