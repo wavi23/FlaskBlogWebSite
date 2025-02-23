@@ -1,8 +1,16 @@
+{% include "menu.html" %}
 {% extends "layout.html" %}
 {% block content %}
 	{% for post in posts %}
-		<h1>{{ post.title }}</h1>
-		<p>Utworzony przez {{ post.author }} {{ post.date_posted }}</p>
-		<p>{{ post.content }}</p>
+		<article class="post">
+			<div class="post-body">
+				<div class="post-metadata">
+					<a href="#" class="post-author">{{ post.author }}</a>
+					<p class="post-posted__data">{{ post.posted_data }}</p>
+				</div>
+				<h2><a href="#" class="post-title">{{ post.title }}</a></h2>
+				<p class="post-content">{{ post.content }}</p>
+			</div>
+		</article>
 	{% endfor %}
 {% endblock %}
