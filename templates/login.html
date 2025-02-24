@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+	<h2>Logowanie</h2>
+	<form method="POST" action="">
+		{{ form.hidden_tag() }}
+		<div class="input-box">
+			<input type="text" name="email" placeholder="Email..." required>
+			<i class="fas fa-envelope"></i>
+		</div>
+		<div class="input-box">
+			<input type="password" name="password" placeholder="Hasło..." required>
+			<i class="fas fa-lock"></i>
+		</div>
+		<button type="submit">Zaloguj</button>
+	</form>
+</div>
+{% endblock %}

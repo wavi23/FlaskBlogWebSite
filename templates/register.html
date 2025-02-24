@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+	<h2>Rejestracja</h2>
+	<form method="POST" action="">
+		{{ form.hidden_tag() }}
+		<div class="input-box">
+			{{ form.username(placeholder="Nazwa użytkownika...") }}
+			<i class="fas fa-user"></i>
+		</div>
+		<div class="input-box">
+			{{ form.email(placeholder="Email...") }}
+			<i class="fas fa-envelope"></i>
+		</div>
+		<div class="input-box">
+			{{ form.password(placeholder="Hasło...") }}
+			<i class="fas fa-lock"></i>
+		</div>
+		<div class="input-box">
+			{{ form.confirm_password(placeholder="Potwierdź Hasło...") }}
+			<i class="fas fa-lock"></i>
+		</div>
+		<button type="submit">Zaloguj</button>
+	</form>
+</div>
+{% endblock %}
