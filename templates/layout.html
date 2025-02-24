@@ -13,6 +13,9 @@
 </head>
 <body>
 	<div class="container">
+		{% with messages = get_flashed_messages(with_categories=true) %}
+			
+		{% endwith %}
 		{% block content %}{% endblock %}
 	</div>
 </body>

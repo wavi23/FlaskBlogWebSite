@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
 {% extends "layout.html" %}
 {% block content %}
-<div class="container">
 	<h2>Rejestracja</h2>
 	<form method="POST" action="">
 		{{ form.hidden_tag() }}
@@ -21,7 +20,9 @@
 			{{ form.confirm_password(placeholder="Potwierdź Hasło...") }}
 			<i class="fas fa-lock"></i>
 		</div>
-		<button type="submit">Zaloguj</button>
+		<div class="submit">
+			{{ form.submit(class="submit-btn") }}
+		</div>
+		<p>Posiadasz już konto? <a href="{{ url_for('login') }}">Zaloguj się</a></p>
 	</form>
-</div>
 {% endblock %}
